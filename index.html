@@ -31,11 +31,11 @@
     </div>
     <ul class="sidebar__links">
       <li><a href="#welcome" class="sidebar__link active" data-section="welcome"><span class="sidebar__number">0</span> Welcome</a></li>
-      <li><a href="#terminal" class="sidebar__link" data-section="terminal"><span class="sidebar__number">1</span> The Terminal</a></li>
-      <li><a href="#getting-started" class="sidebar__link" data-section="getting-started"><span class="sidebar__number">2</span> Getting Started</a></li>
-      <li><a href="#jargon" class="sidebar__link" data-section="jargon"><span class="sidebar__number">3</span> Jargon Decoder</a></li>
-      <li><a href="#workflows" class="sidebar__link" data-section="workflows"><span class="sidebar__number">4</span> Social Workflows</a></li>
-      <li><a href="#tips" class="sidebar__link" data-section="tips"><span class="sidebar__number">5</span> Tips &amp; Tricks</a></li>
+      <li><a href="#workspace" class="sidebar__link" data-section="workspace"><span class="sidebar__number">1</span> Your Social Workspace</a></li>
+      <li><a href="#content-creation" class="sidebar__link" data-section="content-creation"><span class="sidebar__number">2</span> Content Creation</a></li>
+      <li><a href="#ai-video" class="sidebar__link" data-section="ai-video"><span class="sidebar__number">3</span> AI Video Pipeline</a></li>
+      <li><a href="#community" class="sidebar__link" data-section="community"><span class="sidebar__number">4</span> Community &amp; Analytics</a></li>
+      <li><a href="#jargon" class="sidebar__link" data-section="jargon"><span class="sidebar__number">5</span> Jargon Decoder</a></li>
       <li><a href="#try-it" class="sidebar__link" data-section="try-it"><span class="sidebar__number">6</span> Try It Yourself</a></li>
       <li><a href="#resources" class="sidebar__link" data-section="resources"><span class="sidebar__number">+</span> Resources</a></li>
     </ul>
@@ -46,15 +46,15 @@
   <div id="sidebar-overlay" class="sidebar-overlay"></div>
 
 
-  <!-- ====== SECTION 1: WELCOME ====== -->
+  <!-- ====== SECTION 0: WELCOME ====== -->
   <section id="welcome" class="section section--hero">
     <div class="container">
       <div class="hero__badge">A Panic! At The Terminal Production</div>
       <h1 class="hero__title">Social Media <span>101</span></h1>
       <h2 class="hero__chapter">Claude Code for Social Teams</h2>
-      <p class="hero__subtitle">Captions, AI video pipelines, community management, weekly recaps &mdash; the grind that eats your week. Let's give it to Claude Code instead.</p>
+      <p class="hero__subtitle">You know the terminal. You've talked to Claude Code. Now let's put it to work on the stuff that actually eats your week &mdash; captions, video pipelines, DMs, and reporting.</p>
 
-      <a href="#terminal" class="btn btn--primary">Let's Go</a>
+      <a href="#workspace" class="btn btn--primary">Let's Go</a>
       <a href="#jargon" class="btn btn--secondary" style="margin-left: 12px;">Skip to Jargon Decoder</a>
 
       <div class="hero__meta mt-2xl">
@@ -64,109 +64,45 @@
         </div>
         <div class="hero__meta-item">
           <span class="hero__meta-icon">&#128241;</span>
-          <span>Built for content, video, community &amp; analytics work</span>
+          <span>Built for content, video, community &amp; analytics</span>
         </div>
         <div class="hero__meta-item">
           <span class="hero__meta-icon">&#128640;</span>
-          <span>You'll build something real</span>
+          <span>You'll build tools you can use tomorrow</span>
+        </div>
+      </div>
+
+      <div class="callout callout--prerequisite mt-2xl">
+        <span class="callout__icon">&#9432;</span>
+        <div class="callout__text">
+          <strong>Prerequisite:</strong> This course picks up where <a href="https://vibe-coding-101-production.up.railway.app" target="_blank" rel="noopener">Vibe Coding 101</a> left off. You should already know how to open a terminal, launch Claude Code, and give it basic instructions. If you haven't done 101 yet, <a href="https://vibe-coding-101-production.up.railway.app" target="_blank" rel="noopener">start there</a>.
         </div>
       </div>
 
       <div class="mt-2xl">
         <h3>What You'll Learn</h3>
         <ul class="learn-list">
-          <li>What the <span class="jargon" data-definition="A text-based interface where you type commands to your computer instead of clicking buttons. Think of it as texting your computer.">terminal</span> is and why it's not scary</li>
-          <li>How to open and talk to <span class="jargon" data-definition="An AI assistant made by Anthropic that lives in your terminal. You type instructions in plain English and it writes content, creates files, and automates tasks for you.">Claude Code</span></li>
+          <li>How to set up a social media workspace with brand voice files, hashtag libraries, and custom slash commands</li>
           <li>Platform-native captions at scale &mdash; Instagram, TikTok, X, YouTube from one brief</li>
-          <li>AI video workflows &mdash; one script, every tool (Runway, Sora, Veo, HeyGen, CapCut)</li>
-          <li>Community management and weekly recaps that write themselves</li>
-          <li>How to build your own tiny tool &mdash; yes, you</li>
+          <li>AI video pipelines &mdash; one script, every tool (Runway, Sora, Veo, HeyGen, CapCut, Descript)</li>
+          <li>Community management workflows &mdash; 50 on-brand replies in minutes, DM triage, sentiment tracking</li>
+          <li>Analytics that report themselves &mdash; CSV in, Slack-ready recap out</li>
+          <li>How to build a weekly recap tool you can use every Friday</li>
         </ul>
       </div>
     </div>
   </section>
 
 
-  <!-- ====== SECTION 2: THE TERMINAL ====== -->
-  <section id="terminal" class="section">
+  <!-- ====== SECTION 1: YOUR SOCIAL WORKSPACE ====== -->
+  <section id="workspace" class="section section--alt">
     <div class="container container--narrow">
       <span class="section-label">Section 1</span>
-      <h2>The Terminal: It's Just a Text Box</h2>
-      <p class="lead">You use text boxes all day long: caption fields, DM inputs, the search bar in your scheduler. The terminal is just another one. You type something in, and the computer responds.</p>
+      <h2>Your Social Workspace</h2>
+      <p class="lead">Before you start drafting captions, set up a project folder that makes Claude Code dramatically more useful. Think of it as giving Claude Code a cheat sheet for your brand &mdash; once it's there, every output is automatically on-voice.</p>
 
-      <div class="comparison">
-        <div class="comparison__box comparison__box--familiar">
-          <div class="comparison__label">You already know this</div>
-          <div class="comparison__visual">
-            Write a caption for the new course launch...
-          </div>
-          <div class="comparison__text">A caption field. You type, it goes out.</div>
-        </div>
-        <div class="comparison__box comparison__box--terminal">
-          <div class="comparison__label">This is the same idea</div>
-          <div class="comparison__visual">
-            <span style="color: #12BDCD;">~ $</span> echo "Hello!"
-          </div>
-          <div class="comparison__text">A terminal. You type, it answers.</div>
-        </div>
-      </div>
-
-      <p>That's genuinely it. The terminal is a place where you type instructions and your computer follows them. No hacking. No coding required. Just typing.</p>
-
-      <div class="terminal" id="typewriter-demo">
-        <div class="terminal__header">
-          <div class="terminal__dots">
-            <span class="terminal__dot terminal__dot--red"></span>
-            <span class="terminal__dot terminal__dot--yellow"></span>
-            <span class="terminal__dot terminal__dot--green"></span>
-          </div>
-          <span class="terminal__title">Terminal</span>
-        </div>
-        <div class="terminal__body">
-          <code id="typewriter-code"></code>
-        </div>
-      </div>
-
-      <h3 class="mt-2xl">How to Open It</h3>
-
-      <div class="card-grid--2 card-grid">
-        <div class="card card--accent">
-          <h4>Mac</h4>
-          <p class="card__text">Press <code>Cmd + Space</code> to open Spotlight, type <strong>Terminal</strong>, and press Enter.</p>
-          <p class="card__text mt-sm">Or find it in <strong>Applications &rarr; Utilities &rarr; Terminal</strong>.</p>
-        </div>
-        <div class="card card--accent">
-          <h4>Windows</h4>
-          <p class="card__text">Press the <code>Win</code> key, type <strong>Terminal</strong> or <strong>PowerShell</strong>, and press Enter.</p>
-          <p class="card__text mt-sm">Or right-click the Start button and choose <strong>Terminal</strong>.</p>
-        </div>
-      </div>
-
-      <div class="callout callout--reassure mt-xl">
-        <span class="callout__icon">&#128154;</span>
-        <div class="callout__text">
-          <strong>You can't break your computer by typing in the terminal.</strong> If something looks weird or goes wrong, you can always close the window and start fresh. The terminal is not a bomb &mdash; it's a text box.
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ====== SECTION 3: GETTING STARTED ====== -->
-  <section id="getting-started" class="section section--alt">
-    <div class="container container--narrow">
-      <span class="section-label">Section 2</span>
-      <h2>Getting Started with Claude Code</h2>
-      <p class="lead">You've got a terminal open. Now let's meet Claude Code, your AI-powered assistant that lives right inside it.</p>
-
-      <div class="callout callout--prerequisite">
-        <span class="callout__icon">&#9432;</span>
-        <div class="callout__text">
-          <strong>Prerequisite:</strong> You'll need Claude Code installed before you start. Visit <a href="https://claude.ai/code" target="_blank" rel="noopener">claude.ai/code</a> or copy the command below and paste it into your terminal window:
-        </div>
-      </div>
-
-      <p class="mt-lg">Click copy and paste it into your terminal:</p>
+      <h3 class="mt-2xl">The Folder Structure</h3>
+      <p>Here's what a well-organized social project looks like. You don't need every file on day one &mdash; start with the brand folder and grow from there.</p>
 
       <div class="terminal">
         <div class="terminal__header">
@@ -178,33 +114,31 @@
           <span class="terminal__title">Terminal</span>
         </div>
         <div class="terminal__body">
-          <code><span class="terminal__prompt">~ $</span> curl -fsSL https://claude.ai/install.sh | bash</code>
-          <button class="copy-btn" data-copy="curl -fsSL https://claude.ai/install.sh | bash">Copy</button>
+          <code><span class="terminal__prompt">~/Documents/social $</span> tree
+<span class="terminal__response">.
+├── brand/
+│   ├── voice-guidelines.md    ← tone rules, do's/don'ts
+│   ├── hashtag-library.md     ← curated tags + banned list
+│   └── content-pillars.md     ← your 3-5 recurring themes
+├── captions/
+│   ├── instagram/
+│   ├── tiktok/
+│   └── x/
+├── video/
+│   ├── scripts/
+│   └── ai-prompts/
+├── community/
+│   ├── comment-exports/
+│   └── reply-drafts/
+├── analytics/
+│   ├── ig-insights/
+│   └── weekly-recaps/
+└── CLAUDE.md                  ← project-level AI instructions</span></code>
         </div>
       </div>
 
-      <h3 class="mt-2xl">Step 1: Launch Claude Code</h3>
-      <p>Open your terminal and type one word:</p>
-
-      <div class="terminal">
-        <div class="terminal__header">
-          <div class="terminal__dots">
-            <span class="terminal__dot terminal__dot--red"></span>
-            <span class="terminal__dot terminal__dot--yellow"></span>
-            <span class="terminal__dot terminal__dot--green"></span>
-          </div>
-          <span class="terminal__title">Terminal</span>
-        </div>
-        <div class="terminal__body">
-          <code><span class="terminal__prompt">~ $</span> claude</code>
-          <button class="copy-btn" data-copy="claude">Copy</button>
-        </div>
-      </div>
-
-      <p>That's it. Claude Code starts up and you'll see a welcome screen. You're now talking to an AI that can read files, write captions, generate video prompts, parse analytics exports, and build tools &mdash; all from this text box.</p>
-
-      <h3 class="mt-2xl">Step 2: Say Hello</h3>
-      <p>Claude Code understands plain English. Just type what you want, like you'd message a coworker:</p>
+      <h3 class="mt-2xl">The Brand Voice File</h3>
+      <p>This is the single most important file in the folder. When Claude Code reads it before drafting, every caption, reply, and script automatically matches your tone. New team members, freelancers, interns &mdash; everyone gets the same voice because it's enforced by the file, not tribal knowledge.</p>
 
       <div class="terminal">
         <div class="terminal__header">
@@ -216,24 +150,51 @@
           <span class="terminal__title">Claude Code</span>
         </div>
         <div class="terminal__body">
-          <code><span class="terminal__prompt">You:</span> What can you help me with?
+          <code><span class="terminal__prompt">You:</span> Create brand/voice-guidelines.md for Aceable's social
+     presence. We're warm, motivational, and approachable.
+     We talk to students like a supportive friend, not a
+     corporate entity. We never use exclamation stacks (!!!).
+     We always end captions with a soft CTA. We use second
+     person (you/your). Include do's, don'ts, and 3 example
+     phrases for each.
 
-<span class="terminal__response">Claude: I can help you with a wide range of social work! Here
-are some things I'm great at:
+<span class="terminal__response">Claude: I'll create that brand voice file.
 
-  - Writing captions tuned for each platform
-  - Building hashtag sets that avoid banned tags
-  - Generating AI video prompts (Runway, Sora, Veo, HeyGen)
-  - Drafting on-brand replies to comments and DMs at scale
-  - Parsing analytics CSVs into weekly recaps
-  - Building simple tools (caption generators, report templates)
+  Created brand/voice-guidelines.md:
 
-What are you working on?</span></code>
+  # Aceable Social Voice Guidelines
+
+  ## Core Personality
+  Warm. Motivational. Approachable. We talk to students
+  like a supportive friend who's been through it.
+
+  ## Rules
+
+  ### Do
+  - Use second person (you, your, you're)
+  - End every caption with a soft CTA
+  - Keep sentences short and scannable
+  - Examples: "You've got this." / "Your turn." /
+    "Save this for test day."
+
+  ### Don't
+  - Stack exclamation marks (!!!)
+  - Use corporate jargon ("leverage", "synergize")
+  - Be condescending about test anxiety
+  - Examples to avoid: "HUGE NEWS!!!" /
+    "Don't miss out!!!" / "Act now or else!"
+
+  ### Tone Spectrum
+  Celebration posts → excited but grounded
+  Study tips → encouraging, concise
+  Testimonials → let the student's voice lead
+  Product posts → helpful, never salesy</span></code>
+          <button class="copy-btn" data-copy="Create brand/voice-guidelines.md for Aceable's social presence. We're warm, motivational, and approachable. We talk to students like a supportive friend, not a corporate entity. We never use exclamation stacks (!!!). We always end captions with a soft CTA. We use second person (you/your). Include do's, don'ts, and 3 example phrases for each.">Copy prompt</button>
         </div>
       </div>
 
-      <h3 class="mt-2xl">Step 3: Try Something Real</h3>
-      <p>Let's go beyond "hello." Ask Claude Code to actually <em>do something</em> on your computer:</p>
+      <h3 class="mt-2xl">CLAUDE.md: Teach Claude Code Your Defaults</h3>
+      <p>A <code>CLAUDE.md</code> file in your project root tells Claude Code your preferences every time it starts up. No more repeating "use my brand voice file" at the start of each session.</p>
 
       <div class="terminal">
         <div class="terminal__header">
@@ -245,70 +206,671 @@ What are you working on?</span></code>
           <span class="terminal__title">Claude Code</span>
         </div>
         <div class="terminal__body">
-          <code><span class="terminal__prompt">You:</span> Create a file called caption-ideas.md with 3 Instagram
-     caption hooks for a post about passing the real estate
-     licensing exam. Make them warm, motivational, and
-     scroll-stopping.
+          <code><span class="terminal__prompt">You:</span> Create a CLAUDE.md that tells Claude Code: always read
+     brand/voice-guidelines.md before drafting any content.
+     Always check brand/hashtag-library.md before suggesting
+     tags. Default caption format is hook → body → CTA.
+     Target platforms: Instagram, TikTok, X, YouTube.
 
-<span class="terminal__response">Claude: I'll create that file for you.
+<span class="terminal__response">Claude: Created CLAUDE.md:
 
-  Created caption-ideas.md:
+  # CLAUDE.md
 
-  # Real Estate License Pass - IG Caption Hooks
+  ## Brand Rules
+  - Always read brand/voice-guidelines.md before drafting
+    any caption, reply, or script
+  - Always check brand/hashtag-library.md before suggesting
+    hashtags — filter out any tags on the banned list
 
-  1. "6 months ago, she thought she would fail.
-      Today, she passed the real estate exam."
+  ## Content Defaults
+  - Caption structure: Hook → Body → CTA
+  - Target platforms: Instagram, TikTok, X, YouTube
+  - When asked for "captions," generate platform-native
+    versions for all four unless specified otherwise
 
-  2. "The moment you realize the hard part is over."
-
-  3. "POV: you just became a licensed real estate agent."</span></code>
-          <button class="copy-btn" data-copy="Create a file called caption-ideas.md with 3 Instagram caption hooks for a post about passing the real estate licensing exam. Make them warm, motivational, and scroll-stopping.">Copy prompt</button>
+  ## File Conventions
+  - Save captions to captions/{platform}/
+  - Save video scripts to video/scripts/
+  - Save AI prompts to video/ai-prompts/
+  - Save reply drafts to community/reply-drafts/</span></code>
+          <button class="copy-btn" data-copy="Create a CLAUDE.md that tells Claude Code: always read brand/voice-guidelines.md before drafting any content. Always check brand/hashtag-library.md before suggesting tags. Default caption format is hook → body → CTA. Target platforms: Instagram, TikTok, X, YouTube.">Copy prompt</button>
         </div>
       </div>
 
       <div class="callout callout--tip mt-xl">
         <span class="callout__icon">&#10024;</span>
         <div class="callout__text">
-          <strong>Key insight:</strong> You didn't write any code. You described what you wanted in plain English, and Claude Code did the rest. That file now exists on your computer, ready to drop into your scheduler. This is what makes Claude Code different from regular ChatGPT &mdash; it can actually <em>do things</em> on your machine, not just talk about them.
+          <strong>The unlock:</strong> With a CLAUDE.md in place, every conversation starts pre-loaded with your brand rules. You never have to say "read my voice file" again &mdash; it does it automatically. This is the single biggest productivity lever for repeat work.
+        </div>
+      </div>
+
+      <h3 class="mt-2xl">Custom Slash Commands</h3>
+      <p>Turn your most common tasks into one-word shortcuts. These live in <code>.claude/commands/</code> inside your project and the whole team can share them.</p>
+
+      <div class="card-grid mt-xl">
+        <div class="card card--accent">
+          <h4><code>/caption-ig</code></h4>
+          <p class="card__text">Reads voice guide + hashtag library, drafts an Instagram caption with hook/body/CTA structure, appends matching hashtag set.</p>
+        </div>
+        <div class="card card--accent">
+          <h4><code>/hashtag-set</code></h4>
+          <p class="card__text">Builds a balanced set (3 branded, 5 niche, 4 broad), cross-checks against the banned list, saves to a file.</p>
+        </div>
+        <div class="card card--accent">
+          <h4><code>/reply-draft</code></h4>
+          <p class="card__text">Reads a comment export CSV, drafts on-brand replies, skips spam, flags complaints for human review.</p>
+        </div>
+        <div class="card card--cta">
+          <h4><code>/weekly-recap</code></h4>
+          <p class="card__text">Reads IG/TikTok/YouTube analytics CSVs, generates a Slack-formatted weekly recap with top posts, growth, and recommendations.</p>
+        </div>
+      </div>
+
+      <div class="terminal mt-xl">
+        <div class="terminal__header">
+          <div class="terminal__dots">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+          </div>
+          <span class="terminal__title">Claude Code</span>
+        </div>
+        <div class="terminal__body">
+          <code><span class="terminal__prompt">You:</span> Create a custom slash command called /caption-ig that
+     reads brand/voice-guidelines.md and
+     brand/hashtag-library.md, then asks me what the post
+     is about, and generates a full Instagram caption with
+     hook, body, CTA, and hashtag set.
+
+<span class="terminal__response">Claude: Created .claude/commands/caption-ig.md
+
+  Your team can now type /caption-ig to:
+  1. Auto-load voice guidelines and hashtag library
+  2. Ask what the post is about
+  3. Generate a full caption with structure and tags
+
+  Try it now!</span></code>
+          <button class="copy-btn" data-copy="Create a custom slash command called /caption-ig that reads brand/voice-guidelines.md and brand/hashtag-library.md, then asks me what the post is about, and generates a full Instagram caption with hook, body, CTA, and hashtag set.">Copy prompt</button>
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- ====== SECTION 4: JARGON DECODER ====== -->
-  <section id="jargon" class="section">
-    <div class="container">
+  <!-- ====== SECTION 2: CONTENT CREATION ====== -->
+  <section id="content-creation" class="section">
+    <div class="container container--narrow">
+      <span class="section-label">Section 2</span>
+      <h2>Content Creation Workflows</h2>
+      <p class="lead">The daily grind: briefs in, captions out, hashtags researched, variations generated, all on-brand. Here's how Claude Code handles each piece &mdash; and how the pieces chain together.</p>
+
+      <!-- Workflow 1: Platform-Native Captions -->
+      <div class="workflow mt-2xl">
+        <div class="workflow__number">1</div>
+        <h3 class="workflow__title">Brief &rarr; Platform-Native Captions</h3>
+
+        <div class="workflow__scenario">
+          <div class="workflow__scenario-label">The Scenario</div>
+          <p>A one-pager lands for the new real estate course launch. You need an Instagram caption (save-worthy, longer), a TikTok hook (punchy, POV), an X one-liner (under 140), and a YouTube community post. Normally this costs you 30&ndash;45 minutes of context-switching between platform voices.</p>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">Claude Code</span>
+          </div>
+          <div class="terminal__body">
+            <code><span class="terminal__prompt">You:</span> Read launch-brief.md and generate four captions:
+     Instagram (save-worthy, 40-60 words),
+     TikTok (hook-first, POV, under 25 words),
+     X (under 140 characters),
+     YouTube community post (2-3 sentences, conversational).
+     Use brand voice. Save each to captions/{platform}/.
+
+<span class="terminal__response">Claude: Reading launch-brief.md...
+  Reading brand/voice-guidelines.md (via CLAUDE.md)...
+
+  Instagram (58 words):
+  "Your real estate license is closer than you think.
+  Our new self-paced course covers every exam topic with
+  practice questions that mirror what you'll actually see
+  on test day. 1,200 students passed with us last year.
+  You could be next. Save this post for when you're ready
+  &mdash; link in bio."
+
+  TikTok (18 words):
+  "POV: you just found the course that got 1,200 people
+  their real estate license. Link in bio."
+
+  X (96 characters):
+  "1,200 people got their real estate license last year
+  with this course. Your turn."
+
+  YouTube:
+  "We just launched a new self-paced real estate course.
+  It covers everything you need for exam day, and 1,200
+  students passed with us last year. Check the link in
+  the description if you're ready to start."
+
+  &#10003; Saved to captions/instagram/, captions/tiktok/,
+    captions/x/, captions/youtube/</span></code>
+            <button class="copy-btn" data-copy="Read launch-brief.md and generate four captions: Instagram (save-worthy, 40-60 words), TikTok (hook-first, POV, under 25 words), X (under 140 characters), YouTube community post (2-3 sentences, conversational). Use brand voice. Save each to captions/{platform}/.">Copy prompt</button>
+          </div>
+        </div>
+
+        <div class="workflow__takeaway">
+          <p>One brief in, four platform-native captions out. Instagram gets the long-form save-worthy treatment. TikTok gets the hook-first POV. X gets the scannable one-liner. YouTube gets the conversational tone. No cross-posting tax &mdash; each platform gets native content in one prompt.</p>
+        </div>
+      </div>
+
+      <!-- Workflow 2: Hashtag Research -->
+      <div class="workflow">
+        <div class="workflow__number">2</div>
+        <h3 class="workflow__title">Hashtag Research at Scale</h3>
+
+        <div class="workflow__scenario">
+          <div class="workflow__scenario-label">The Scenario</div>
+          <p>Every Reel needs a balanced hashtag set &mdash; branded tags for discoverability, niche tags for reach, broad tags for volume. You also maintain a banned-tag list of hashtags Instagram has flagged. Putting the set together takes 15 minutes per post, and you still sometimes slip a flagged tag through.</p>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">Claude Code</span>
+          </div>
+          <div class="terminal__body">
+            <code><span class="terminal__prompt">You:</span> Build a hashtag set for the real estate course launch
+     Reel. 3 branded, 5 niche, 4 broad. Check
+     brand/hashtag-library.md for banned tags. Save the set.
+
+<span class="terminal__response">Claude: Reading brand/hashtag-library.md...
+  (18 banned tags loaded)
+
+  Hashtag set (12 tags):
+
+  Branded:
+    #AceableAgent  #AceableEducation  #PassWithAceable
+
+  Niche:
+    #RealEstateExam  #NewAgentLife  #RealEstateStudent
+    #RealEstateLicense  #ExamPrep
+
+  Broad:
+    #RealEstate  #CareerChange  #StudyMotivation
+    #NewCareer
+
+  &#10003; Cross-checked against banned list &mdash; all clear
+  &#10003; Saved to captions/instagram/launch-reel-tags.md</span></code>
+            <button class="copy-btn" data-copy="Build a hashtag set for the real estate course launch Reel. 3 branded, 5 niche, 4 broad. Check brand/hashtag-library.md for banned tags. Save the set.">Copy prompt</button>
+          </div>
+        </div>
+
+        <div class="workflow__takeaway">
+          <p>Balanced set, banned-tag filter, saved to a file you can paste into your scheduler. When your banned list grows (and it will), every future set benefits automatically because Claude Code reads the library fresh each time.</p>
+        </div>
+      </div>
+
+      <!-- Workflow 3: A/B Variations + Content Calendar -->
+      <div class="workflow">
+        <div class="workflow__number">3</div>
+        <h3 class="workflow__title">A/B Variations &amp; Content Calendar</h3>
+
+        <div class="workflow__scenario">
+          <div class="workflow__scenario-label">The Scenario</div>
+          <p>You want to test four different caption hooks on the same Reel (urgency, curiosity, social proof, humor), and you need a two-week content calendar for the launch campaign. Normally this is a half-day of brainstorming and spreadsheet wrangling.</p>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">Claude Code</span>
+          </div>
+          <div class="terminal__body">
+            <code><span class="terminal__prompt">You:</span> Generate 4 Instagram caption variants for the course
+     launch Reel. Each under 30 words. Use these angles:
+     urgency, curiosity, social proof, humor. Then draft a
+     2-week IG + TikTok content calendar: 4 posts per week,
+     alternating pillars. Save as a CSV.
+
+<span class="terminal__response">Claude: Caption variants (each under 30 words):
+
+  A &mdash; Urgency:
+  "Enrollment closes Friday. 1,200 students passed last
+  year. The only question is whether you'll be next.
+  Link in bio."
+
+  B &mdash; Curiosity:
+  "We added something to the real estate course that
+  nobody expected. Swipe to see what changed."
+
+  C &mdash; Social Proof:
+  "1,200 licensed agents. One course. This is what they
+  used. See for yourself &mdash; link in bio."
+
+  D &mdash; Humor:
+  "Me: I'll study later.
+  Later: *still scrolling*
+  This course: I got you. Link in bio."
+
+  &#10003; Saved to captions/instagram/launch-variants.md
+
+  Content calendar (saved to analytics/content-calendar.csv):
+
+  Week 1:
+    Mon  IG Carousel   "5 exam tips nobody tells you"
+    Wed  TikTok Reel   "POV: you found the course"
+    Thu  IG Reel        Launch video (variant test)
+    Fri  TikTok UGC     Student testimonial stitch
+
+  Week 2:
+    Mon  IG Carousel   "What the exam actually looks like"
+    Wed  TikTok Trend   "Day in the life: real estate student"
+    Thu  IG Story Set    Behind-the-scenes: course creation
+    Fri  TikTok Reel    "Pass rate by study method"
+
+  &#10003; CSV saved &mdash; paste into Airtable or Notion</span></code>
+            <button class="copy-btn" data-copy="Generate 4 Instagram caption variants for the course launch Reel. Each under 30 words. Use these angles: urgency, curiosity, social proof, humor. Then draft a 2-week IG + TikTok content calendar: 4 posts per week, alternating pillars. Save as a CSV.">Copy prompt</button>
+          </div>
+        </div>
+
+        <div class="workflow__takeaway">
+          <p>Four testable angles for the same post, plus a full two-week calendar with platform-specific format suggestions and content pillar rotation. The CSV output drops straight into Airtable, Notion, or whatever calendar tool your team uses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== SECTION 3: AI VIDEO PIPELINE ====== -->
+  <section id="ai-video" class="section section--alt">
+    <div class="container container--narrow">
       <span class="section-label section-label--pink">Section 3</span>
-      <h2>The Jargon Decoder</h2>
-      <p class="lead">Tech has a lot of jargon. Social has its own too. Here's your cheat sheet for both.</p>
+      <h2>AI Video Creation Pipeline</h2>
+      <p class="lead">AI video tools are powerful individually. The problem is coordinating them: translating one script into Runway prompts, Sora prompts, HeyGen scripts, CapCut captions &mdash; each tool speaks a different dialect. Claude Code speaks all of them.</p>
+
+      <!-- Workflow 4: Script + On-Screen Text -->
+      <div class="workflow mt-2xl">
+        <div class="workflow__number">4</div>
+        <h3 class="workflow__title">Script &amp; On-Screen Text</h3>
+
+        <div class="workflow__scenario">
+          <div class="workflow__scenario-label">The Scenario</div>
+          <p>You need a 30-second TikTok video about a student passing their real estate exam. You need: a hook (first 3 seconds), beat-by-beat voiceover, on-screen text overlays with timing, and 3 alternative hooks to test. This usually takes a copywriter an hour to structure properly.</p>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">Claude Code</span>
+          </div>
+          <div class="terminal__body">
+            <code><span class="terminal__prompt">You:</span> Write a 30-second TikTok script about a student passing
+     the real estate exam. Include: 3 hook options for the
+     first 3 seconds, beat-by-beat voiceover with timing,
+     and on-screen text for each beat. Save to
+     video/scripts/re-exam-pass-tiktok.md
+
+<span class="terminal__response">Claude: 3 hook options:
+  A &mdash; "POV: you just became a licensed real estate agent"
+  B &mdash; "6 months ago she almost quit. Today she passed."
+  C &mdash; "The moment the hard part is finally over."
+
+  Script (30s):
+
+  [0-3s]  HOOK &mdash; close-up of exam results, dramatic reveal
+          VO:  "Six months ago, she thought she'd fail."
+          TEXT: SIX MONTHS AGO
+
+  [3-12s] THE STRUGGLE
+          VO:  "Late nights. Practice exams. Moments where
+                she wanted to quit."
+          TEXT: 200+ PRACTICE QUESTIONS
+
+  [12-22s] THE PAYOFF
+          VO:  "Today she walked into the testing center,
+                sat down, and passed."
+          TEXT: PASSED. FIRST TRY.
+
+  [22-28s] THE PROOF
+          VO:  "1,200 students did the same thing last year.
+                Same course. Same result."
+          TEXT: 1,200 LICENSED AGENTS
+
+  [28-30s] CTA
+          VO:  "Your turn. Link in bio."
+          TEXT: YOUR TURN &#8599;
+
+  &#10003; Saved to video/scripts/re-exam-pass-tiktok.md</span></code>
+            <button class="copy-btn" data-copy="Write a 30-second TikTok script about a student passing the real estate exam. Include: 3 hook options for the first 3 seconds, beat-by-beat voiceover with timing, and on-screen text for each beat. Save to video/scripts/re-exam-pass-tiktok.md">Copy prompt</button>
+          </div>
+        </div>
+
+        <div class="workflow__takeaway">
+          <p>A production-ready script with timing, VO, and on-screen text &mdash; structured so your video editor can execute it beat-by-beat. Three hook options for testing. This becomes the single source that feeds every tool downstream.</p>
+        </div>
+      </div>
+
+      <!-- Workflow 5: AI Tool Orchestration -->
+      <div class="workflow">
+        <div class="workflow__number">5</div>
+        <h3 class="workflow__title">One Script &rarr; Every AI Tool</h3>
+
+        <div class="workflow__scenario">
+          <div class="workflow__scenario-label">The Scenario</div>
+          <p>You have the script. Now you need: a Runway Gen-3 prompt for the hook shot, a Sora prompt as a backup, a HeyGen avatar voiceover, and an SRT caption file for CapCut. Each tool wants different technical details &mdash; aspect ratio, camera moves, delivery style, timestamp format. Translating between them is the tedious part.</p>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">Claude Code</span>
+          </div>
+          <div class="terminal__body">
+            <code><span class="terminal__prompt">You:</span> Read video/scripts/re-exam-pass-tiktok.md. Generate:
+     (1) Runway Gen-3 prompt for the 0-3s hook shot,
+     (2) Sora prompt for the same shot,
+     (3) HeyGen avatar voiceover script (full 30s),
+     (4) CapCut SRT caption file with timestamps.
+     Save everything to video/ai-prompts/.
+
+<span class="terminal__response">Claude: Reading video/scripts/re-exam-pass-tiktok.md...
+
+  Runway Gen-3:
+  "Close-up of hands holding a printed exam result,
+   'PASS' circled in red pen. Morning light through
+   blinds, soft bokeh background. Slow push-in,
+   cinematic, 9:16 portrait, 3 seconds."
+
+  Sora:
+  "Hands reveal a real estate exam result with a passing
+   score. Shallow depth of field, golden hour side light.
+   Shot on 35mm film, vertical 9:16, 3 seconds."
+
+  HeyGen (warm, excited delivery):
+  "Six months ago, she thought she'd fail. Late nights.
+   Practice exams. Moments where she wanted to quit.
+   Today she walked into the testing center, sat down,
+   and passed. 1,200 students did the same thing last
+   year. Same course. Same result. Your turn."
+
+  SRT caption track:
+  00:00:00,000 --> 00:00:03,000
+  SIX MONTHS AGO
+  00:00:03,000 --> 00:00:12,000
+  200+ PRACTICE QUESTIONS
+  00:00:12,000 --> 00:00:22,000
+  PASSED. FIRST TRY.
+  00:00:22,000 --> 00:00:28,000
+  1,200 LICENSED AGENTS
+  00:00:28,000 --> 00:00:30,000
+  YOUR TURN &#8599;
+
+  &#10003; All saved to video/ai-prompts/</span></code>
+            <button class="copy-btn" data-copy="Read video/scripts/re-exam-pass-tiktok.md. Generate: (1) Runway Gen-3 prompt for the 0-3s hook shot, (2) Sora prompt for the same shot, (3) HeyGen avatar voiceover script (full 30s), (4) CapCut SRT caption file with timestamps. Save everything to video/ai-prompts/.">Copy prompt</button>
+          </div>
+        </div>
+
+        <div class="workflow__takeaway">
+          <p>Each AI tool gets a prompt in its own dialect &mdash; Runway wants camera moves and aspect ratio, Sora wants film-stock language, HeyGen wants delivery notes, CapCut wants SRT timestamps. Claude Code translates between all of them from one source script. When the hook changes, change it once, regenerate, and every downstream artifact updates.</p>
+        </div>
+      </div>
+
+      <!-- Workflow 6: Multi-Format -->
+      <div class="workflow">
+        <div class="workflow__number">6</div>
+        <h3 class="workflow__title">One Video &rarr; Every Platform</h3>
+
+        <div class="workflow__scenario">
+          <div class="workflow__scenario-label">The Scenario</div>
+          <p>You shot one video. You need it cut for a 60-second Instagram Reel, a 15-second TikTok, and a 45-second YouTube Short &mdash; each with different pacing, hooks, and caption styles. Not just trimmed shorter &mdash; actually re-structured for the platform.</p>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">Claude Code</span>
+          </div>
+          <div class="terminal__body">
+            <code><span class="terminal__prompt">You:</span> Take video/scripts/re-exam-pass-tiktok.md and create
+     three platform cuts: a 60s IG Reel (add a product
+     walkthrough beat), a 15s TikTok (hook + payoff only),
+     and a 45s YouTube Short (more explainer tone, add
+     stats). Adjust hooks and pacing for each.
+
+<span class="terminal__response">Claude: Generated 3 platform cuts:
+
+  IG Reel (60s):
+    Hook: "The course TikTok won't stop talking about."
+    Added beat: [12-30s] Course walkthrough (practice
+    exams, study plan, mobile app)
+    Closes with 2 CTA moments (mid-roll + end)
+    &#10003; Saved to video/scripts/reel-60s.md
+
+  TikTok (15s):
+    Hook: "POV: you just passed the real estate exam."
+    Straight to payoff: results + celebration
+    No product shots &mdash; pure emotion
+    &#10003; Saved to video/scripts/tiktok-15s.md
+
+  YouTube Short (45s):
+    Hook: "I tested 3 real estate courses. This one won."
+    Explainer structure with stat callouts
+    Ends with subscribe CTA
+    &#10003; Saved to video/scripts/yt-short-45s.md
+
+  All three share the same b-roll library.</span></code>
+            <button class="copy-btn" data-copy="Take video/scripts/re-exam-pass-tiktok.md and create three platform cuts: a 60s IG Reel (add a product walkthrough beat), a 15s TikTok (hook + payoff only), and a 45s YouTube Short (more explainer tone, add stats). Adjust hooks and pacing for each.">Copy prompt</button>
+          </div>
+        </div>
+
+        <div class="workflow__takeaway">
+          <p>Reach multiplication. One shoot, three platform-native cuts. Each version gets its own hook, pacing, beat structure, and CTA &mdash; not just a length trim. The TikTok is pure emotion, the Reel adds product context, the Short adds explainer depth. Same source footage, three different editorial approaches.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== SECTION 4: COMMUNITY & ANALYTICS ====== -->
+  <section id="community" class="section">
+    <div class="container container--narrow">
+      <span class="section-label">Section 4</span>
+      <h2>Community &amp; Analytics</h2>
+      <p class="lead">Replies and reporting are where the grind really lives. Comment backlogs pile up, DMs need triage, and every Friday brings the same 45-minute recap ritual. Claude Code can handle all of it.</p>
+
+      <!-- Workflow 7: Comment Replies -->
+      <div class="workflow mt-2xl">
+        <div class="workflow__number">7</div>
+        <h3 class="workflow__title">Draft 50 Replies in Minutes</h3>
+
+        <div class="workflow__scenario">
+          <div class="workflow__scenario-label">The Scenario</div>
+          <p>Friday afternoon. 47 unread Instagram comments from the week &mdash; questions about courses, excited students, a few complaints. Replying on-brand to all of them will eat the rest of your day. You know the answers; the bottleneck is writing them one by one in the right voice.</p>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">Claude Code</span>
+          </div>
+          <div class="terminal__body">
+            <code><span class="terminal__prompt">You:</span> Read community/comment-exports/ig-week-of-apr-7.csv.
+     Draft on-brand replies using brand voice. Skip spam.
+     Flag complaints for human review &mdash; don't draft replies
+     for those. Save to community/reply-drafts/apr-7.md.
+
+<span class="terminal__response">Claude: Reading ig-week-of-apr-7.csv (47 comments)...
+  Reading brand/voice-guidelines.md (via CLAUDE.md)...
+
+  Results:
+    &#10003; 41 replies drafted (on-brand)
+    &#9888; 4 skipped (spam/bot)
+    &#9888; 2 flagged for human review (complaints)
+
+  Samples:
+
+    @maya.learns: "Just enrolled! Any study tips?"
+    &rarr; "Welcome, Maya! Start with the practice exams
+       &mdash; they mirror the real test. You've got this."
+
+    @dan_realestate: "Does this work for the TX exam?"
+    &rarr; "Yes! We have the full Texas state prep built
+       in. Check the curriculum breakdown in our bio."
+
+    @frustrated_user: "Still waiting on my refund. 3 weeks."
+    &rarr; FLAGGED FOR HUMAN REVIEW &mdash; do not auto-reply
+
+  &#10003; Saved to community/reply-drafts/apr-7.md</span></code>
+            <button class="copy-btn" data-copy="Read community/comment-exports/ig-week-of-apr-7.csv. Draft on-brand replies using brand voice. Skip spam. Flag complaints for human review — don't draft replies for those. Save to community/reply-drafts/apr-7.md.">Copy prompt</button>
+          </div>
+        </div>
+
+        <div class="workflow__takeaway">
+          <p>47 comments processed, 41 on-brand drafts ready for your quick review-and-post workflow. Spam auto-skipped. Complaints surfaced for a human, not auto-answered. Every reply follows your voice guidelines file, so new team members produce the same quality output as veterans.</p>
+        </div>
+      </div>
+
+      <!-- Workflow 8: Analytics + Build a Tool -->
+      <div class="workflow">
+        <div class="workflow__number">8</div>
+        <h3 class="workflow__title">The Weekly Recap &mdash; and the Tool That Writes It</h3>
+
+        <div class="workflow__scenario">
+          <div class="workflow__scenario-label">The Scenario</div>
+          <p>Every Friday: export IG Insights, TikTok Analytics, YouTube Studio. Paste numbers into a doc. Format for Slack. Add commentary. Ship. 45 minutes, same shape every week. What if you could make a tool that does this for you &mdash; a real tool you open in your browser, paste CSVs into, and get a Slack-ready recap out?</p>
+        </div>
+
+        <p>First, the one-off recap:</p>
+
+        <div class="terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">Claude Code</span>
+          </div>
+          <div class="terminal__body">
+            <code><span class="terminal__prompt">You:</span> Read analytics/ig-insights/apr-7.csv and summarize:
+     top 3 posts by save rate, top 3 by share rate,
+     overall engagement rate, follower growth, and
+     3 recommendations for next week. Format for Slack.
+
+<span class="terminal__response">Claude: Reading analytics/ig-insights/apr-7.csv (28 posts)...
+
+  *&#128200; Social Recap &mdash; Week of Apr 7*
+
+  *Top Posts (saves)*
+    &#129351; Carousel "5 exam tips" &mdash; 4.8% save rate
+    &#129352; Reel "POV: you passed" &mdash; 3.9% save rate
+    &#129353; Carousel "What the exam looks like" &mdash; 3.6%
+
+  *Top Posts (shares)*
+    &#129351; Reel "POV: you passed" &mdash; 2.7% share rate
+    &#129352; Carousel "5 exam tips" &mdash; 2.1%
+    &#129353; Story poll "Ready for exam day?" &mdash; 1.9%
+
+  *Engagement:* 3.2% overall (&#8593; 0.4 pts WoW)
+  *Follower growth:* +1,840 this week
+
+  *Recommendations:*
+    &bull; Double down on carousel exam tips (highest saves)
+    &bull; Test more POV Reels (best share-to-impression ratio)
+    &bull; Add one "what the exam looks like" post per week
+
+  &#10003; Ready to paste into #social-team</span></code>
+            <button class="copy-btn" data-copy="Read analytics/ig-insights/apr-7.csv and summarize: top 3 posts by save rate, top 3 by share rate, overall engagement rate, follower growth, and 3 recommendations for next week. Format for Slack.">Copy prompt</button>
+          </div>
+        </div>
+
+        <p class="mt-xl">Now, the permanent tool:</p>
+
+        <div class="terminal">
+          <div class="terminal__header">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">Claude Code</span>
+          </div>
+          <div class="terminal__body">
+            <code><span class="terminal__prompt">You:</span> Build an HTML tool called weekly-recap.html. Three text
+     areas: paste IG Insights CSV, TikTok Analytics CSV,
+     YouTube Studio CSV. A "Generate" button that outputs a
+     Slack-formatted recap with: top posts per platform,
+     follower growth, engagement rates, and highlights.
+     Include a "Copy to Slack" button.
+
+<span class="terminal__response">Claude: Created weekly-recap.html
+
+  Features:
+    &bull; Three paste areas (IG, TikTok, YouTube)
+    &bull; "Generate Recap" button
+    &bull; Slack-formatted output with emoji
+    &bull; Top posts by engagement per platform
+    &bull; Follower growth totals
+    &bull; Week-over-week comparison
+    &bull; "Copy to Slack" button (clipboard)
+
+  Open weekly-recap.html in your browser &mdash; use it
+  every Friday.</span></code>
+            <button class="copy-btn" data-copy='Build an HTML tool called weekly-recap.html. Three text areas: paste IG Insights CSV, TikTok Analytics CSV, YouTube Studio CSV. A "Generate" button that outputs a Slack-formatted recap with: top posts per platform, follower growth, engagement rates, and highlights. Include a "Copy to Slack" button.'>Copy prompt</button>
+          </div>
+        </div>
+
+        <div class="workflow__takeaway">
+          <p><strong>You just built a tool.</strong> A real HTML file you can open in your browser every Friday, paste three CSVs into, and get a Slack-ready recap with one click. You didn't write a line of code. That's <span class="highlight-text">vibe coding</span> &mdash; describing the thing and letting AI build it. Your 45-minute Friday ritual just became 2 minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== SECTION 5: JARGON DECODER ====== -->
+  <section id="jargon" class="section section--alt">
+    <div class="container">
+      <span class="section-label section-label--pink">Section 5</span>
+      <h2>Social Jargon Decoder</h2>
+      <p class="lead">The social-specific and AI video terms you'll encounter in this course and on the job. For general tech jargon (terminal, CLI, prompt, git), see <a href="https://vibe-coding-101-production.up.railway.app/#jargon" target="_blank" rel="noopener">Vibe Coding 101's Jargon Decoder</a>.</p>
       <div class="mt-lg">
         <button id="download-jargon" class="btn btn--secondary btn--small">Download This List as CSV</button>
       </div>
 
       <div class="glossary-grid mt-xl">
         <div class="glossary-item">
-          <div class="glossary-term">Terminal</div>
-          <div class="glossary-definition">A text box where you type instructions to your computer. That's it. It's not hacking &mdash; it's typing.</div>
-          <div class="glossary-context">"Open the terminal" = "Open the app where you type commands"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">CLI</div>
-          <div class="glossary-definition">Command Line Interface. A program you control by typing text instead of clicking buttons. Claude Code is a CLI tool.</div>
-          <div class="glossary-context">"It's a CLI" = "You use it by typing, not clicking"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">Prompt</div>
-          <div class="glossary-definition">The instruction you give to an AI. Better prompts = better results. It's like briefing an intern &mdash; the more specific, the less they guess wrong.</div>
-          <div class="glossary-context">"Write a good prompt" = "Give clear, specific instructions"</div>
-        </div>
-
-        <div class="glossary-item">
           <div class="glossary-term">Hook</div>
           <div class="glossary-definition">The first 1&ndash;3 seconds of a video or the first line of a caption. Its only job is to stop the scroll. Everything else depends on it landing.</div>
-          <div class="glossary-context">"Your hook is weak" = "Nobody's gonna stop scrolling for this"</div>
+          <div class="glossary-context">"Your hook is weak" = "Nobody's going to stop scrolling for this"</div>
         </div>
 
         <div class="glossary-item">
@@ -319,7 +881,7 @@ What are you working on?</span></code>
 
         <div class="glossary-item">
           <div class="glossary-term">Brand Voice</div>
-          <div class="glossary-definition">The consistent personality of your content &mdash; tone, word choices, what you avoid. Written down in a file, it becomes enforceable (by Claude Code or anyone new).</div>
+          <div class="glossary-definition">The consistent personality of your content &mdash; tone, word choices, what you avoid. Written down in a file, it becomes enforceable by Claude Code or anyone new on the team.</div>
           <div class="glossary-context">"Stay on brand voice" = "Sound like us, not generic AI"</div>
         </div>
 
@@ -332,90 +894,36 @@ What are you working on?</span></code>
         <div class="glossary-item">
           <div class="glossary-term">B-roll</div>
           <div class="glossary-definition">Supplementary video footage layered under your main shot or voiceover. The cutaway clips that make a talking head feel dynamic.</div>
-          <div class="glossary-context">"Add more b-roll" = "Cut away to extra footage"</div>
+          <div class="glossary-context">"Add more b-roll" = "Cut away to supporting footage"</div>
         </div>
 
         <div class="glossary-item">
           <div class="glossary-term">SRT</div>
-          <div class="glossary-definition">A subtitle file format. Plain text with timestamps that captioning software (CapCut, YouTube, Descript) uses to burn in captions.</div>
-          <div class="glossary-context">"Export an SRT" = "Generate the caption file for the editor"</div>
+          <div class="glossary-definition">A subtitle file format. Plain text with timestamps that captioning tools (CapCut, YouTube, Descript) use to burn in captions or display closed captions.</div>
+          <div class="glossary-context">"Export an SRT" = "Generate the caption timing file for the editor"</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">AI Video Prompt</div>
+          <div class="glossary-definition">A text description that tells AI video tools (Runway, Sora, Veo) what to generate. Needs technical specifics: aspect ratio, duration, camera move, mood, lighting.</div>
+          <div class="glossary-context">"Write a Runway prompt" = "Describe the shot in a way Runway can build"</div>
         </div>
 
         <div class="glossary-item">
           <div class="glossary-term">Engagement Rate</div>
-          <div class="glossary-definition">% of followers (or reach) who interacted with a post &mdash; likes, comments, shares, saves. The metric most people actually look at.</div>
+          <div class="glossary-definition">% of followers (or reach) who interacted with a post &mdash; likes, comments, shares, saves. The metric most stakeholders actually look at first.</div>
           <div class="glossary-context">"ER dropped" = "Fewer people are interacting with our posts"</div>
         </div>
 
         <div class="glossary-item">
           <div class="glossary-term">Reach vs Impressions</div>
-          <div class="glossary-definition">Reach = unique people who saw it. Impressions = total times it was seen (same person can count multiple times). Reach is the truer view.</div>
-          <div class="glossary-context">"High impressions, low reach" = "Same people kept seeing it"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">AI Video Prompt</div>
-          <div class="glossary-definition">A text description that tells AI video tools (Runway, Sora, Veo) what to generate. Needs technical specifics: aspect ratio, duration, camera move, mood.</div>
-          <div class="glossary-context">"Write a Runway prompt" = "Describe the shot in a way Runway can build it"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">Context Window</div>
-          <div class="glossary-definition">How much text an AI can "remember" in a single conversation. Think of it as Claude Code's short-term memory. Long sessions eat into it.</div>
-          <div class="glossary-context">"The context window is full" = "The AI's memory for this chat is maxed out"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">Hallucination</div>
-          <div class="glossary-definition">When an AI confidently generates information that sounds correct but is actually made up. Not lying on purpose &mdash; pattern-matching gone wrong. Always review.</div>
-          <div class="glossary-context">"The AI hallucinated that stat" = "It made up a number that sounded real"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">Token</div>
-          <div class="glossary-definition">A chunk of text that an AI processes. Roughly 1 token = 3/4 of a word. Every message you send and every response uses tokens. They're the AI's reading unit.</div>
-          <div class="glossary-context">"That used a lot of tokens" = "That was a long conversation for the AI"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">LLM</div>
-          <div class="glossary-definition">Large Language Model. The type of AI that powers Claude, ChatGPT, and similar tools. Trained on massive amounts of text so it can understand and generate human language.</div>
-          <div class="glossary-context">"Which LLM are you using?" = "Which AI model powers your tool?"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">MCP</div>
-          <div class="glossary-definition">Model Context Protocol. A standard that lets AI tools connect to external services &mdash; Slack, Drive, Notion, Meta Insights. A universal adapter for Claude Code.</div>
-          <div class="glossary-context">"Connect via MCP" = "Let the AI talk to that other tool directly"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">Directory</div>
-          <div class="glossary-definition">A folder. That's it. Developers just call folders "directories" because they like sounding fancy.</div>
-          <div class="glossary-context">"Navigate to the directory" = "Go to the folder"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">Markdown</div>
-          <div class="glossary-definition">A simple way to format text using symbols. # = heading, ** = bold, - = bullet point. Most brand voice files and content briefs are written in it.</div>
-          <div class="glossary-context">"Write it in Markdown" = "Use these simple formatting symbols"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">CSV</div>
-          <div class="glossary-definition">Comma-Separated Values. A simple spreadsheet format that everything exports to &mdash; Instagram Insights, TikTok Analytics, comment exports, content calendars.</div>
-          <div class="glossary-context">"Export as CSV" = "Download it as a spreadsheet"</div>
-        </div>
-
-        <div class="glossary-item">
-          <div class="glossary-term">Banned Hashtags</div>
-          <div class="glossary-definition">Tags that platforms (especially Instagram) have flagged or shadow-banned. Using them can suppress your post's reach. Every brand maintains a running list.</div>
-          <div class="glossary-context">"Check the banned list" = "Make sure none of these tags are flagged"</div>
+          <div class="glossary-definition">Reach = unique people who saw it. Impressions = total times it was shown (same person can see it multiple times). Reach is the truer view count.</div>
+          <div class="glossary-context">"High impressions, low reach" = "Same people keep seeing it"</div>
         </div>
 
         <div class="glossary-item">
           <div class="glossary-term">Content Pillar</div>
-          <div class="glossary-definition">A recurring theme your brand posts about. Most accounts have 3&ndash;5 pillars (e.g., tips, testimonials, behind-the-scenes). Pillars keep the feed coherent.</div>
+          <div class="glossary-definition">A recurring theme your brand posts about. Most accounts have 3&ndash;5 pillars (e.g., tips, testimonials, behind-the-scenes, product, culture). Pillars keep the feed coherent without being repetitive.</div>
           <div class="glossary-context">"Which pillar is this?" = "Which content bucket does this fit?"</div>
         </div>
 
@@ -426,450 +934,73 @@ What are you working on?</span></code>
         </div>
 
         <div class="glossary-item">
+          <div class="glossary-term">Banned Hashtags</div>
+          <div class="glossary-definition">Tags that platforms (especially Instagram) have flagged or shadow-banned. Using them can silently suppress your post's reach. Every brand should maintain a running list.</div>
+          <div class="glossary-context">"Check the banned list" = "Make sure none of these tags are flagged"</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Save Rate</div>
+          <div class="glossary-definition">% of people who bookmarked/saved your post. Instagram's algorithm weighs saves heavily. High save rate = the algorithm promotes it more.</div>
+          <div class="glossary-context">"Optimize for saves" = "Make it reference-worthy, not just likeable"</div>
+        </div>
+
+        <div class="glossary-item">
           <div class="glossary-term">Asset</div>
           <div class="glossary-definition">Any piece of content &mdash; an image, a video clip, a caption, a graphic. Everything that could ship is an "asset" until it's published.</div>
-          <div class="glossary-context">"Where's the asset?" = "Where's the thing we're posting?"</div>
+          <div class="glossary-context">"Where's the asset?" = "Where's the file we're about to post?"</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">Stitch / Duet</div>
+          <div class="glossary-definition">TikTok features that let you react to or build on another creator's video. Stitch clips a segment; Duet plays side-by-side. Great for UGC and engagement bait.</div>
+          <div class="glossary-context">"Stitch that testimonial" = "Clip the student's video and add our reaction"</div>
+        </div>
+
+        <div class="glossary-item">
+          <div class="glossary-term">CLAUDE.md</div>
+          <div class="glossary-definition">A project configuration file that Claude Code reads automatically on startup. Put your brand rules, file conventions, and default behaviors in here so you never have to repeat them.</div>
+          <div class="glossary-context">"Update the CLAUDE.md" = "Change the default rules Claude Code follows"</div>
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- ====== SECTION 5: REAL-WORLD WORKFLOWS ====== -->
-  <section id="workflows" class="section section--alt">
-    <div class="container container--narrow">
-      <span class="section-label">Section 4</span>
-      <h2>Real-World Social Workflows</h2>
-      <p class="lead">Enough theory. Let's see Claude Code solve real problems your team actually faces. Each demo follows the same pattern: the scenario, the <span class="jargon" data-definition="The instruction you type into Claude Code. The more specific your prompt, the better the result.">prompt</span>, and the result.</p>
-
-      <!-- Workflow 1: Platform-Native Captions -->
-      <div class="workflow mt-2xl">
-        <div class="workflow__number">1</div>
-        <h3 class="workflow__title">Brief &rarr; Platform-Native Captions</h3>
-
-        <div class="workflow__scenario">
-          <div class="workflow__scenario-label">The Scenario</div>
-          <p>You just got a one-pager brief for a course launch. Normally you spend 30 minutes translating it into an Instagram caption, a TikTok hook, and a one-liner for X &mdash; each with its own tone, length, and vibe. By the time you're done, half your morning's gone.</p>
-        </div>
-
-        <p>Save the brief into your project folder and point Claude Code at it:</p>
-
-        <div class="terminal">
-          <div class="terminal__header">
-            <div class="terminal__dots">
-              <span class="terminal__dot terminal__dot--red"></span>
-              <span class="terminal__dot terminal__dot--yellow"></span>
-              <span class="terminal__dot terminal__dot--green"></span>
-            </div>
-            <span class="terminal__title">Claude Code</span>
-          </div>
-          <div class="terminal__body">
-            <code><span class="terminal__prompt">You:</span> Read launch-brief.md and write three captions for the
-     course launch: one for Instagram (save-worthy, longer),
-     one for TikTok (hook-first, punchy, POV style), and
-     one for X (under 140 chars, shareable). Match each
-     platform's native voice.
-
-<span class="terminal__response">Claude: I'll read the brief and draft all three.
-
-  Reading launch-brief.md...
-
-  Instagram (save-worthy):
-  "Your real estate license is 30 days away. Our new
-  self-paced course walks you through every exam topic,
-  with practice questions that mirror what you'll actually
-  see on test day. Save this post for when you're ready
-  to start &mdash; link in bio."
-
-  TikTok (hook-first):
-  "POV: you just found the real estate course that got
-  1,200 people licensed last year. Yeah, this one.
-  Link in bio. Stop scrolling."
-
-  X (under 140 chars):
-  "1,200 people got their real estate license with this
-  course last year. Your turn."
-
-  &#10003; All three saved to captions/launch-captions.md</span></code>
-            <button class="copy-btn" data-copy="Read launch-brief.md and write three captions for the course launch: one for Instagram (save-worthy, longer), one for TikTok (hook-first, punchy, POV style), and one for X (under 140 chars, shareable). Match each platform's native voice.">Copy prompt</button>
-          </div>
-        </div>
-
-        <div class="workflow__takeaway">
-          <p>One brief in, three platform-native captions out. Each one adapts length, tone, and hook structure to the platform. No cross-posting tax. Your half-morning just became two minutes.</p>
-        </div>
-      </div>
-
-      <!-- Workflow 2: Hashtag Research -->
-      <div class="workflow">
-        <div class="workflow__number">2</div>
-        <h3 class="workflow__title">Hashtag Research at Scale</h3>
-
-        <div class="workflow__scenario">
-          <div class="workflow__scenario-label">The Scenario</div>
-          <p>Every Reel you post needs a balanced hashtag set &mdash; branded, niche, broad. You also have a running list of banned tags you can't use. Putting the set together manually takes 15 minutes per post, and you still sometimes slip a flagged tag through.</p>
-        </div>
-
-        <p>Let Claude Code build the set and cross-check against your banned list:</p>
-
-        <div class="terminal">
-          <div class="terminal__header">
-            <div class="terminal__dots">
-              <span class="terminal__dot terminal__dot--red"></span>
-              <span class="terminal__dot terminal__dot--yellow"></span>
-              <span class="terminal__dot terminal__dot--green"></span>
-            </div>
-            <span class="terminal__title">Claude Code</span>
-          </div>
-          <div class="terminal__body">
-            <code><span class="terminal__prompt">You:</span> Build a hashtag set for our real estate course launch
-     Reel. Mix 3 branded, 5 niche, 4 broad. Read
-     brand/hashtag-library.md for our banned tags and avoid
-     them. Save the final set.
-
-<span class="terminal__response">Claude: Reading brand/hashtag-library.md...
-  (18 banned tags loaded &mdash; will avoid)
-
-  Hashtag set (12 tags):
-
-  Branded:
-    #AceableAgent  #AceableEducation  #PassWithAceable
-
-  Niche:
-    #RealEstateExam  #NewAgentLife  #RealEstateStudent
-    #PassingTheTest  #RealEstateCourse
-
-  Broad:
-    #RealEstate  #CareerChange  #NewCareer  #StudyTips
-
-  &#10003; Cross-checked against banned list &mdash; all clear
-  &#10003; Saved to captions/launch-reel-hashtags.md</span></code>
-            <button class="copy-btn" data-copy="Build a hashtag set for our real estate course launch Reel. Mix 3 branded, 5 niche, 4 broad. Read brand/hashtag-library.md for our banned tags and avoid them. Save the final set.">Copy prompt</button>
-          </div>
-        </div>
-
-        <div class="workflow__takeaway">
-          <p>Balanced set, banned-tag check, saved to a file &mdash; all in one prompt. Do this once per post instead of manually rebuilding every time. When your banned list grows, every future set benefits automatically.</p>
-        </div>
-      </div>
-
-      <!-- Workflow 3: AI Video Prompt Pipeline -->
-      <div class="workflow">
-        <div class="workflow__number">3</div>
-        <h3 class="workflow__title">AI Video: One Script, Every Tool</h3>
-
-        <div class="workflow__scenario">
-          <div class="workflow__scenario-label">The Scenario</div>
-          <p>You have a 30-second TikTok script. To actually produce it, you need: AI video prompts for Runway or Sora, a voiceover script for HeyGen, and a caption file (SRT) for CapCut. Usually you hand-translate the same script into four different tool dialects. It's tedious, error-prone, and a terrible use of your day.</p>
-        </div>
-
-        <p>One prompt, one script, every tool:</p>
-
-        <div class="terminal">
-          <div class="terminal__header">
-            <div class="terminal__dots">
-              <span class="terminal__dot terminal__dot--red"></span>
-              <span class="terminal__dot terminal__dot--yellow"></span>
-              <span class="terminal__dot terminal__dot--green"></span>
-            </div>
-            <span class="terminal__title">Claude Code</span>
-          </div>
-          <div class="terminal__body">
-            <code><span class="terminal__prompt">You:</span> Read video/tiktok-script.md. Generate: (1) a Runway
-     Gen-3 prompt for the opening 3-sec hook, (2) a Sora
-     prompt for the same shot as a backup, (3) a HeyGen
-     avatar voiceover script, and (4) an SRT caption file
-     for CapCut. Save everything under video/ai-prompts/.
-
-<span class="terminal__response">Claude: Reading video/tiktok-script.md...
-
-  Generated 4 artifacts:
-
-  Runway Gen-3 prompt:
-    "Close-up of a hand turning over a real estate exam
-     paper, passing grade circled in red. Morning light,
-     cinematic, 9:16 portrait, slow push-in, 3 seconds."
-
-  Sora prompt:
-    "Hand reveals a passed real estate license exam,
-     soft morning light, shallow depth of field, shot on
-     35mm, 3 seconds, vertical."
-
-  HeyGen avatar script:
-    "(warm, excited delivery)
-     Three months ago, this was a dream. Today, it's real."
-
-  SRT caption track:
-    00:00:00,000 --> 00:00:03,000
-    SHE DID IT.
-    00:00:03,000 --> 00:00:15,000
-    FROM APPLICATION TO LICENSE IN 90 DAYS.
-    00:00:15,000 --> 00:00:30,000
-    YOU'RE NEXT. LINK IN BIO.
-
-  &#10003; All saved to video/ai-prompts/</span></code>
-            <button class="copy-btn" data-copy="Read video/tiktok-script.md. Generate: (1) a Runway Gen-3 prompt for the opening 3-sec hook, (2) a Sora prompt for the same shot as a backup, (3) a HeyGen avatar voiceover script, and (4) an SRT caption file for CapCut. Save everything under video/ai-prompts/.">Copy prompt</button>
-          </div>
-        </div>
-
-        <div class="workflow__takeaway">
-          <p>One source script, four tool-specific outputs, all in a project folder ready for your editor. When the hook changes, change it once in the script and re-run &mdash; every downstream artifact updates. <strong>This is the superpower</strong>: Claude Code speaks every AI video tool's prompt dialect so you don't have to.</p>
-        </div>
-      </div>
-
-      <!-- Workflow 4: Comment Replies -->
-      <div class="workflow">
-        <div class="workflow__number">4</div>
-        <h3 class="workflow__title">Draft 50 Replies in Minutes</h3>
-
-        <div class="workflow__scenario">
-          <div class="workflow__scenario-label">The Scenario</div>
-          <p>Friday afternoon. You've got 47 unread Instagram comments from the week &mdash; questions, excitement, a few complaints. Replying on-brand to all of them will eat the rest of your day, and you're already behind on the weekly recap.</p>
-        </div>
-
-        <p>Export the comments as CSV, drop them in the project folder, and let Claude Code draft replies you can approve:</p>
-
-        <div class="terminal">
-          <div class="terminal__header">
-            <div class="terminal__dots">
-              <span class="terminal__dot terminal__dot--red"></span>
-              <span class="terminal__dot terminal__dot--yellow"></span>
-              <span class="terminal__dot terminal__dot--green"></span>
-            </div>
-            <span class="terminal__title">Claude Code</span>
-          </div>
-          <div class="terminal__body">
-            <code><span class="terminal__prompt">You:</span> Read community/comments-ig-export.csv. Draft on-brand
-     replies for each non-spam comment using
-     brand/voice-guidelines.md as the style guide. Flag
-     anything that looks like a complaint for human review
-     (don't auto-reply to those). Save drafts to
-     community/reply-drafts.md.
-
-<span class="terminal__response">Claude: Reading community/comments-ig-export.csv (47 rows)...
-  Reading brand/voice-guidelines.md...
-
-  Results:
-    &#10003; 41 replies drafted
-    &#9888; 4 flagged as spam (skipped)
-    &#9888; 2 flagged for human review (complaints)
-
-  Sample drafts:
-
-    @maya.learns: "Obsessed with this course!!"
-    &rarr; "So glad it is landing with you, Maya. Which
-       module are you finding most helpful so far?"
-
-    @dan.agent.92: "Does this cover the TX state exam?"
-    &rarr; "Great question! Yes &mdash; we have the full
-       TX state prep built in. Check the curriculum
-       link in bio for the breakdown."
-
-  Flagged for review:
-    @mr.j: "Still have not received my refund. Three weeks."
-    &rarr; HUMAN REVIEW &mdash; do not auto-reply
-
-  &#10003; Saved to community/reply-drafts.md</span></code>
-            <button class="copy-btn" data-copy="Read community/comments-ig-export.csv. Draft on-brand replies for each non-spam comment using brand/voice-guidelines.md as the style guide. Flag anything that looks like a complaint for human review (don't auto-reply to those). Save drafts to community/reply-drafts.md.">Copy prompt</button>
-          </div>
-        </div>
-
-        <div class="workflow__takeaway">
-          <p>47 comments, 41 on-brand drafts ready for a quick review. Spam skipped. Complaints flagged, not auto-answered. Your voice guidelines are enforced by the file, not by memory. You approve the drafts &mdash; you don't rewrite them.</p>
-        </div>
-      </div>
-
-      <!-- Workflow 5: Build a Tool -->
-      <div class="workflow">
-        <div class="workflow__number">5</div>
-        <h3 class="workflow__title">Build Your Weekly Recap Tool</h3>
-
-        <div class="workflow__scenario">
-          <div class="workflow__scenario-label">The Scenario</div>
-          <p>Every Friday you paste Instagram Insights, TikTok Analytics, and YouTube Studio numbers into a shared doc, format it for Slack, add commentary, and ship. It takes 45 minutes and it's the same shape every week. What if there was a tool that just... did it?</p>
-        </div>
-
-        <p>Ask Claude Code to build one for you:</p>
-
-        <div class="terminal">
-          <div class="terminal__header">
-            <div class="terminal__dots">
-              <span class="terminal__dot terminal__dot--red"></span>
-              <span class="terminal__dot terminal__dot--yellow"></span>
-              <span class="terminal__dot terminal__dot--green"></span>
-            </div>
-            <span class="terminal__title">Claude Code</span>
-          </div>
-          <div class="terminal__body">
-            <code><span class="terminal__prompt">You:</span> Build a simple HTML tool called weekly-recap.html where
-     I can paste in IG Insights CSV data in one text area,
-     TikTok Analytics in another, and YouTube Studio in a
-     third. When I click "Generate", it outputs a
-     Slack-formatted weekly recap with top posts, follower
-     growth, engagement rate, and a "highlights" section.
-     Include a "Copy to Slack" button.
-
-<span class="terminal__response">Claude: I'll build that tool for you.
-
-  Created weekly-recap.html
-
-  The tool includes:
-    - Three text areas (IG, TikTok, YouTube CSVs)
-    - A "Generate Recap" button
-    - Slack-formatted output with emoji (&#128200; &#129351; &#129352; &#129353;)
-    - Top posts by save rate and share rate
-    - Follower growth totals per platform
-    - Overall engagement rate
-    - Highlights section (top 3 posts, any anomalies)
-    - A "Copy to Slack" button that copies
-      the formatted output to clipboard
-
-  Open weekly-recap.html in your browser to use it.</span></code>
-            <button class="copy-btn" data-copy='Build a simple HTML tool called weekly-recap.html where I can paste in IG Insights CSV data in one text area, TikTok Analytics in another, and YouTube Studio in a third. When I click "Generate", it outputs a Slack-formatted weekly recap with top posts, follower growth, engagement rate, and a "highlights" section. Include a "Copy to Slack" button.'>Copy prompt</button>
-          </div>
-        </div>
-
-        <div class="workflow__takeaway">
-          <p><strong>You just built a tool.</strong> A real HTML file you can open in your browser and use every Friday forever. You didn't write a line of code &mdash; you described what you wanted. That's <span class="highlight-text">vibe coding</span> &mdash; describing the thing and letting AI build it.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ====== SECTION 6: TIPS, TRICKS & GOTCHAS ====== -->
-  <section id="tips" class="section">
-    <div class="container">
-      <span class="section-label">Section 5</span>
-      <h2>Tips, Tricks &amp; Gotchas</h2>
-      <p class="lead">A few things that'll make your Claude Code experience much smoother.</p>
-
-      <div class="tip-grid mt-xl">
-        <div class="tip-card">
-          <div class="tip-card__icon">&#127919;</div>
-          <div class="tip-card__title">Be Specific</div>
-          <div class="tip-card__text">The more detail you give, the better the output. <em>"Write a caption"</em> is vague. <em>"Write a 40-word Instagram caption for a real estate license pass, warm tone, end with a soft CTA to link in bio"</em> is great. Think of it like briefing a freelancer &mdash; specificity prevents rework.</div>
-        </div>
-
-        <div class="tip-card">
-          <div class="tip-card__icon">&#128260;</div>
-          <div class="tip-card__title">Iterate, Don't Start Over</div>
-          <div class="tip-card__text">If the first draft isn't quite right, don't restart. Just tell Claude Code what to change: <em>"Make the hook punchier"</em> or <em>"Shorten to under 25 words."</em> It's a conversation, not a one-shot. Refinement is how you get great results.</div>
-        </div>
-
-        <div class="tip-card">
-          <div class="tip-card__icon">&#128193;</div>
-          <div class="tip-card__title">Point It at Real Files</div>
-          <div class="tip-card__text">Claude Code's superpower is working with actual files. Instead of describing your brand voice, drop in <code>brand/voice-guidelines.md</code> and say <em>"Read this first."</em> Real files = enforced consistency, not vibes-based.</div>
-        </div>
-
-        <div class="tip-card">
-          <div class="tip-card__icon">&#129300;</div>
-          <div class="tip-card__title">Ask for Explanations</div>
-          <div class="tip-card__text">If Claude Code does something you don't understand, just ask: <em>"Explain what you just did and why you picked that hashtag set."</em> It'll break down the reasoning. This is the fastest way to learn &mdash; and to spot when it got something wrong.</div>
-        </div>
-
-        <div class="tip-card">
-          <div class="tip-card__icon">&#128161;</div>
-          <div class="tip-card__title">Give It a Role</div>
-          <div class="tip-card__text">Tell Claude Code who it should be: <em>"You're a TikTok growth strategist"</em> or <em>"Act as our brand voice editor."</em> Setting a role tailors the tone, format, and opinions to match what you actually need.</div>
-        </div>
-
-        <div class="tip-card">
-          <div class="tip-card__icon">&#128736;</div>
-          <div class="tip-card__title">Let It Read Before You Ask</div>
-          <div class="tip-card__text">Before asking Claude Code to write on-brand, let it read your voice file first. Say <em>"Read brand/voice-guidelines.md, then draft the caption."</em> Giving context up front gets dramatically better results than describing voice from memory.</div>
-        </div>
-      </div>
-
-      <h3 class="mt-2xl">Gotchas to Watch For</h3>
-      <div class="tip-grid tip-grid--gotchas mt-lg">
-        <div class="tip-card tip-card--gotcha">
-          <div class="tip-card__icon">&#9888;&#65039;</div>
-          <div class="tip-card__title">It's Not Always Right</div>
-          <div class="tip-card__text">Claude Code can make mistakes &mdash; especially on specific stats, trending sounds, or recent platform changes. <strong>Always review</strong> before publishing. Trust, but verify. Nothing auto-posts unless you set it up to.</div>
-        </div>
-
-        <div class="tip-card tip-card--gotcha">
-          <div class="tip-card__icon">&#128204;</div>
-          <div class="tip-card__title">File Paths Matter</div>
-          <div class="tip-card__text">Claude Code looks for files relative to where you launched it. If it can't find your brand voice file, you might be in the wrong folder. Use <code>pwd</code> to check, and <code>cd ~/Documents/social</code> to navigate to your project.</div>
-        </div>
-
-        <div class="tip-card tip-card--gotcha">
-          <div class="tip-card__icon">&#128172;</div>
-          <div class="tip-card__title">Fresh Chats for Fresh Tasks</div>
-          <div class="tip-card__text">Long conversations can cause Claude Code to lose focus. Switching from drafting captions to analyzing a CSV in the same session? Type <code>/clear</code> and start fresh. Better results, faster responses.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ====== SECTION 7: TRY IT YOURSELF ====== -->
+  <!-- ====== SECTION 6: TRY IT YOURSELF ====== -->
   <section id="try-it" class="section section--dark">
     <div class="container container--narrow">
       <span class="section-label">Section 6</span>
       <h2>Try It Yourself</h2>
-      <p class="lead">Time to get your hands dirty. Here's a guided exercise you can do right now if you have Claude Code installed. Total time: about 5&ndash;7 minutes.</p>
+      <p class="lead">Time to get your hands dirty. You're going to set up a real social media project and generate your first on-brand caption &mdash; all in about 5&ndash;7 minutes.</p>
 
       <h3 class="mt-2xl" style="color: var(--color-accent);">Exercise: Build Your Content Starter Kit</h3>
-      <p>You're going to set up a project folder for your social work and let Claude Code build you a starter brand voice file, hashtag library, and caption template. Things you can actually reuse every day.</p>
+      <p>Create a project folder with a brand voice file, hashtag library, and caption template. Then prove the system works by generating a caption that uses all three.</p>
 
       <div class="steps mt-xl">
         <div class="step">
           <div class="step__number">1</div>
           <div class="step__content">
-            <div class="step__title">Open your terminal</div>
-            <p class="step__text">Mac: <code>Cmd + Space</code>, type "Terminal", press Enter.<br>Windows: Press the <code>Win</code> key, type "Terminal", press Enter.</p>
+            <div class="step__title">Create your social project folder</div>
+            <div class="terminal">
+              <div class="terminal__header">
+                <div class="terminal__dots">
+                  <span class="terminal__dot terminal__dot--red"></span>
+                  <span class="terminal__dot terminal__dot--yellow"></span>
+                  <span class="terminal__dot terminal__dot--green"></span>
+                </div>
+                <span class="terminal__title">Terminal</span>
+              </div>
+              <div class="terminal__body">
+                <code><span class="terminal__prompt">~ $</span> mkdir -p ~/Documents/my-social-kit && cd ~/Documents/my-social-kit</code>
+                <button class="copy-btn" data-copy="mkdir -p ~/Documents/my-social-kit && cd ~/Documents/my-social-kit">Copy</button>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="step">
           <div class="step__number">2</div>
-          <div class="step__content">
-            <div class="step__title">Navigate to your Documents folder</div>
-            <div class="terminal">
-              <div class="terminal__header">
-                <div class="terminal__dots">
-                  <span class="terminal__dot terminal__dot--red"></span>
-                  <span class="terminal__dot terminal__dot--yellow"></span>
-                  <span class="terminal__dot terminal__dot--green"></span>
-                </div>
-                <span class="terminal__title">Terminal</span>
-              </div>
-              <div class="terminal__body">
-                <code><span class="terminal__prompt">~ $</span> cd ~/Documents</code>
-                <button class="copy-btn" data-copy="cd ~/Documents">Copy</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step__number">3</div>
-          <div class="step__content">
-            <div class="step__title">Create a project folder and go into it</div>
-            <div class="terminal">
-              <div class="terminal__header">
-                <div class="terminal__dots">
-                  <span class="terminal__dot terminal__dot--red"></span>
-                  <span class="terminal__dot terminal__dot--yellow"></span>
-                  <span class="terminal__dot terminal__dot--green"></span>
-                </div>
-                <span class="terminal__title">Terminal</span>
-              </div>
-              <div class="terminal__body">
-                <code><span class="terminal__prompt">~/Documents $</span> mkdir my-social-kit && cd my-social-kit</code>
-                <button class="copy-btn" data-copy="mkdir my-social-kit && cd my-social-kit">Copy</button>
-              </div>
-            </div>
-            <p class="step__text mt-sm"><code>mkdir</code> creates a new folder. <code>cd</code> moves you into it. The <code>&amp;&amp;</code> just means "do both, one after the other."</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step__number">4</div>
           <div class="step__content">
             <div class="step__title">Launch Claude Code</div>
             <div class="terminal">
@@ -890,10 +1021,50 @@ What are you working on?</span></code>
         </div>
 
         <div class="step">
+          <div class="step__number">3</div>
+          <div class="step__content">
+            <div class="step__title">Build the starter kit</div>
+            <p class="step__text">Copy this prompt (replace [BRAND] with your brand name, or just use "Aceable"):</p>
+            <div class="terminal">
+              <div class="terminal__header">
+                <div class="terminal__dots">
+                  <span class="terminal__dot terminal__dot--red"></span>
+                  <span class="terminal__dot terminal__dot--yellow"></span>
+                  <span class="terminal__dot terminal__dot--green"></span>
+                </div>
+                <span class="terminal__title">Claude Code</span>
+              </div>
+              <div class="terminal__body">
+                <code><span class="terminal__prompt">You:</span> Set up a social media starter kit for [BRAND]. Create:
+     - brand/voice-guidelines.md (tone, do's/don'ts, examples)
+     - brand/hashtag-library.md (branded, niche, broad tags +
+       empty banned section)
+     - captions/template.md (hook/body/CTA structure)
+     - CLAUDE.md (auto-read voice file before drafting,
+       check hashtag library before tagging)</code>
+                <button class="copy-btn" data-copy="Set up a social media starter kit for [BRAND]. Create:
+- brand/voice-guidelines.md (tone, do's/don'ts, examples)
+- brand/hashtag-library.md (branded, niche, broad tags + empty banned section)
+- captions/template.md (hook/body/CTA structure)
+- CLAUDE.md (auto-read voice file before drafting, check hashtag library before tagging)">Copy prompt</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step__number">4</div>
+          <div class="step__content">
+            <div class="step__title">Review what Claude Code built</div>
+            <p class="step__text">You should now have a <code>brand/</code> folder with your voice rules and hashtag library, a <code>captions/</code> folder with a template, and a <code>CLAUDE.md</code> that auto-loads your brand rules. Open them in any text editor and customize.</p>
+          </div>
+        </div>
+
+        <div class="step">
           <div class="step__number">5</div>
           <div class="step__content">
-            <div class="step__title">Give Claude Code your prompt</div>
-            <p class="step__text">Copy and paste this into Claude Code (replace [BRAND] with your actual brand or just use "Aceable"):</p>
+            <div class="step__title">Prove it works &mdash; generate a caption</div>
+            <p class="step__text">Now use the system you just built:</p>
             <div class="terminal">
               <div class="terminal__header">
                 <div class="terminal__dots">
@@ -904,61 +1075,14 @@ What are you working on?</span></code>
                 <span class="terminal__title">Claude Code</span>
               </div>
               <div class="terminal__body">
-                <code><span class="terminal__prompt">You:</span> Set up a social media starter kit for [BRAND]. Create
-     a folder structure with:
-     - brand/voice-guidelines.md (tone rules, do's and
-       don'ts, example phrases)
-     - brand/hashtag-library.md (3 branded tags, 5 niche
-       tags, 4 broad tags, plus an empty "banned" section)
-     - captions/template.md (a reusable caption structure
-       with hook, body, CTA sections)
-     - README.md (quick guide to what's in this folder
-       and how to use it)
-     Use markdown formatting. Keep it practical and editable.</code>
-                <button class="copy-btn" data-copy="Set up a social media starter kit for [BRAND]. Create a folder structure with:
-- brand/voice-guidelines.md (tone rules, do's and don'ts, example phrases)
-- brand/hashtag-library.md (3 branded tags, 5 niche tags, 4 broad tags, plus an empty &quot;banned&quot; section)
-- captions/template.md (a reusable caption structure with hook, body, CTA sections)
-- README.md (quick guide to what's in this folder and how to use it)
-Use markdown formatting. Keep it practical and editable.">Copy prompt</button>
+                <code><span class="terminal__prompt">You:</span> Draft an Instagram caption about a student who just
+     passed the real estate exam on their first try.
+     Use my voice guidelines, follow the caption template,
+     and append a hashtag set from my library.</code>
+                <button class="copy-btn" data-copy="Draft an Instagram caption about a student who just passed the real estate exam on their first try. Use my voice guidelines, follow the caption template, and append a hashtag set from my library.">Copy prompt</button>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step__number">6</div>
-          <div class="step__content">
-            <div class="step__title">Review what Claude Code created</div>
-            <p class="step__text">Claude Code creates four files across two subfolders, then shows you the structure. Every <code>.md</code> file is a plain text file you can open in any text editor &mdash; TextEdit, VS Code, or even Notes.</p>
-            <p class="step__text mt-sm">In Finder, go to <strong>Documents &rarr; my-social-kit</strong> to see the folder. Open <code>brand/voice-guidelines.md</code> to see what Claude Code wrote as a starting point. This is <em>your</em> starter kit &mdash; edit it.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step__number">7</div>
-          <div class="step__content">
-            <div class="step__title">Ask Claude Code to use your kit</div>
-            <p class="step__text">Now prove it works. Try this follow-up:</p>
-            <div class="terminal">
-              <div class="terminal__header">
-                <div class="terminal__dots">
-                  <span class="terminal__dot terminal__dot--red"></span>
-                  <span class="terminal__dot terminal__dot--yellow"></span>
-                  <span class="terminal__dot terminal__dot--green"></span>
-                </div>
-                <span class="terminal__title">Claude Code</span>
-              </div>
-              <div class="terminal__body">
-                <code><span class="terminal__prompt">You:</span> Read brand/voice-guidelines.md and captions/template.md.
-     Then draft an Instagram caption about a student
-     passing the real estate licensing exam. Make sure it
-     follows our voice rules and uses the template
-     structure.</code>
-                <button class="copy-btn" data-copy="Read brand/voice-guidelines.md and captions/template.md. Then draft an Instagram caption about a student passing the real estate licensing exam. Make sure it follows our voice rules and uses the template structure.">Copy prompt</button>
-              </div>
-            </div>
-            <p class="step__text mt-sm">Notice how Claude Code reads your files <em>first</em>, then writes a caption that matches. This is the pattern for every future request.</p>
+            <p class="step__text mt-sm">Claude Code reads your voice file and hashtag library automatically (thanks to CLAUDE.md), follows your caption template structure, and produces something on-brand. <strong>This is the pattern for every future request.</strong></p>
           </div>
         </div>
       </div>
@@ -966,7 +1090,7 @@ Use markdown formatting. Keep it practical and editable.">Copy prompt</button>
       <div class="callout callout--reassure mt-2xl">
         <span class="callout__icon">&#127942;</span>
         <div class="callout__text">
-          <strong>Bonus challenge:</strong> Ask Claude Code to adapt the same caption into a TikTok hook and an X one-liner. Say: <em>"Now give me TikTok and X versions using the same voice rules."</em> Three platforms, one source, zero extra effort.
+          <strong>Bonus:</strong> Ask Claude Code to create a <code>/caption-ig</code> custom slash command that does Step 5 automatically. Then your whole team can type one word and get an on-brand Instagram caption.
         </div>
       </div>
     </div>
@@ -977,47 +1101,10 @@ Use markdown formatting. Keep it practical and editable.">Copy prompt</button>
   <section class="section section--cta">
     <div class="container" style="max-width: 600px;">
       <h2>You Did It.</h2>
-      <p class="lead">You just completed Social Media 101; the basics. You've seen the terminal, talked to Claude Code, and built a starter kit your whole team can use. The more you use it, the more natural it gets.</p>
-      <p class="mt-lg" style="color: rgba(255,255,255,0.8);">Remember: Claude Code is a tool, not magic. The quality of what you get out depends on the quality of what you put in &mdash; your brand voice file, your hashtag library, your brief. Be specific. Iterate. Have fun with it.</p>
+      <p class="lead">You just completed Social Media 101. You've got a workspace with brand voice enforcement, workflows for every part of your week, and a recap tool you built yourself.</p>
+      <p class="mt-lg" style="color: rgba(255,255,255,0.8);">The quality of what Claude Code produces depends on what you feed it &mdash; your voice file, your hashtag library, your brief. Invest 20 minutes customizing those starter files and every output for the rest of the year gets better.</p>
       <div class="mt-xl">
         <a href="#welcome" class="btn btn--ghost">Back to Top</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ====== COMING NEXT WEEK ====== -->
-  <section class="section section--alt">
-    <div class="container">
-      <span class="section-label section-label--pink">Coming Next Week</span>
-      <h2>Chapter 2: Leveling Up Your Social Stack</h2>
-      <p class="lead">You've got the basics. Here's what we're covering next.</p>
-
-      <div class="preview-list mt-xl">
-        <div class="preview-list__item">
-          <h4>Custom Slash Commands for Your Team</h4>
-          <p class="card__text">Build <code>/caption-ig</code>, <code>/hashtag-set</code>, <code>/reply-draft</code> as one-word shortcuts. Every team member gets the same quality output every time. Consistency by default.</p>
-        </div>
-
-        <div class="preview-list__item">
-          <h4>CLAUDE.md Files for Brand Voice</h4>
-          <p class="card__text">Teach Claude Code your brand voice once and it remembers forever. The power-user unlock that turns Claude Code from a caption drafter into a brand voice guardian.</p>
-        </div>
-
-        <div class="preview-list__item">
-          <h4>AI Video Workflows, End-to-End</h4>
-          <p class="card__text">Go deeper on the Runway, Sora, Veo, HeyGen, CapCut, Descript pipeline. Script to published video in one conversation, with three platform cuts from one source.</p>
-        </div>
-
-        <div class="preview-list__item">
-          <h4>MCPs: Plug Into Your Actual Stack</h4>
-          <p class="card__text">Connect Claude Code to Slack, Google Drive, Notion, Airtable, Meta Insights. Instead of copy-pasting between tools, Claude Code reaches into each. The workflow hub unlock.</p>
-        </div>
-
-        <div class="preview-list__item">
-          <h4>Context Windows for Long Campaign Sessions</h4>
-          <p class="card__text">When you're deep in a campaign and have drafted 30 variations, Claude Code's memory fills up. Learn how to use <code>/compact</code> and fresh chats to keep quality high across hours of work.</p>
-        </div>
       </div>
     </div>
   </section>
@@ -1028,7 +1115,7 @@ Use markdown formatting. Keep it practical and editable.">Copy prompt</button>
     <div class="container container--narrow">
       <span class="section-label">Resources</span>
       <h2>Keep Learning</h2>
-      <p class="lead">Helpful links, guides, and references to continue your Claude Code journey.</p>
+      <p class="lead">Links and references to keep going.</p>
 
       <div class="accordion mt-xl">
         <details class="accordion__item" open>
@@ -1041,7 +1128,7 @@ Use markdown formatting. Keep it practical and editable.">Copy prompt</button>
               <li class="resource-list__item">
                 <a href="https://vibe-coding-101-production.up.railway.app" target="_blank" rel="noopener" class="resource-list__link">
                   <span class="resource-list__name">Vibe Coding 101: Claude Code for Non-Devs</span>
-                  <span class="resource-list__meta">The original</span>
+                  <span class="resource-list__meta">Start here if new to Claude Code</span>
                 </a>
               </li>
             </ul>
@@ -1103,16 +1190,6 @@ Use markdown formatting. Keep it practical and editable.">Copy prompt</button>
                 </a>
               </li>
             </ul>
-          </div>
-        </details>
-
-        <details class="accordion__item">
-          <summary class="accordion__header">
-            <span class="accordion__title">Tips &amp; Tutorials</span>
-            <span class="accordion__icon">+</span>
-          </summary>
-          <div class="accordion__body">
-            <p class="resource-list__empty">More resources coming soon!</p>
           </div>
         </details>
       </div>
